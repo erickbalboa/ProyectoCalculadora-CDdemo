@@ -4,3 +4,9 @@ packages/
 ProyectoCalculadora/bin/
 
 ProyectoCalculadora/obj/
+
+UnitTests-ProyectoCalculadora/bin/Debug/
+
+*.cache
+
+UnitTests-ProyectoCalculadora/obj/Debug/
