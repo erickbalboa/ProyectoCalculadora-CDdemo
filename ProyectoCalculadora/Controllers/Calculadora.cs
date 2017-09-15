@@ -16,5 +16,10 @@ namespace ProyectoCalculadora.Controllers
         {
             return 3;
         }
+
+        public int Division(int a, int b)
+        {
+            throw new Exception("Division entre 0");
+        }
     }
 }
