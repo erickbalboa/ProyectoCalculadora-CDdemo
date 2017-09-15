@@ -9,7 +9,7 @@ namespace ProyectoCalculadora.Controllers
     {
         public int Suma(int a, int b)
         {
-            return 3;
+            return 5;
         }
     }
 }
