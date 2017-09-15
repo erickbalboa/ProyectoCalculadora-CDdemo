@@ -10,7 +10,7 @@ pipeline {
     agent any
     
     parameters {
-        choice(name: 'TEAM', choices: 'Team1\nTeam2\nTeam3\nTeam4\nTeam5\nTeam6\nTeam7\nProyectoCalculadora', description: 'Team #')        
+        choice(name: 'TEAM', choices: 'Team1\nTeam2\nTeam3\nTeam4\nTeam5\nTeam6\nTeam7\nProduction', description: 'Team #')        
     }
     
     stages {
