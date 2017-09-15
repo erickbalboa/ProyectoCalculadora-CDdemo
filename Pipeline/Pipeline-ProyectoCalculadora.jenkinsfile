@@ -1,6 +1,6 @@
 #!groovy
 def msbuildLocation = "'C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\amd64\\MSBuild.exe'"
-def msTestLocation = "'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\MSTest.exe'"
+def nunitLocation = "'C:\\Program Files (x86)\\NUnit.org\\nunit-console\\nunit3-console.exe'"
 def nugetLocation = "'C:\\NuGet\\nuget.exe'"
 def publishUrl = "C:\\ArtifactRepo\\ProyectoCalculadora\\${params.TEAM}"
 def artifactRepo = "C:\\ArtifactRepo\\ProyectoCalculadora\\${params.TEAM}"
@@ -40,7 +40,7 @@ pipeline {
 		stage ('Run Unit Tests') {
             steps {
                 powershell 'Write-Output "******************** Run Unit Tests  ************************"'
-                //powershell "& ${msTestLocation} /testcontainer:.\\UnitTests-ProyectoCalculadora\\bin\\Debug\\UnitTests-ProyectoCalculadora.dll"
+                powershell "& ${nunitLocation} .\\NUnit-ProyectoCalculadora\\bin\\Debug\\NUnit-ProyectoCalculadora.dll"
 			}
         }
         
