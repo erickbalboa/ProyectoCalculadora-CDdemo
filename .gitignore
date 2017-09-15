@@ -12,3 +12,11 @@ UnitTests-ProyectoCalculadora/bin/Debug/
 \.vs/ProyectoCalculadora/v14/\.suo
 
 *.cache
+
+*.dll
+
+*.pdb
+
+NUnit-ProyectoCalculadora/bin/Debug/
+
+NUnit-ProyectoCalculadora/obj/Debug/
