@@ -4,3 +4,11 @@ packages/
 ProyectoCalculadora/bin/
 
 ProyectoCalculadora/obj/
+
+NUnit-ProyectoCalculadora/bin/Debug/
+
+NUnit-ProyectoCalculadora/obj/Debug/
+
+UnitTests-ProyectoCalculadora/bin/Debug/
+
+UnitTests-ProyectoCalculadora/obj/Debug/
