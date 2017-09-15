@@ -5,7 +5,12 @@ using System.Web;
 
 namespace ProyectoCalculadora.Controllers
 {
-    public class Calculadora
+    public interface ICalculadora
+    {
+        int Suma(int a, int b);
+    }
+
+    public class Calculadora: ICalculadora
     {
         public int Suma(int a, int b)
         {
