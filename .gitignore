@@ -10,3 +10,5 @@ UnitTests-ProyectoCalculadora/bin/Debug/
 *.cache
 
 UnitTests-ProyectoCalculadora/obj/Debug/
+
+\.vs/ProyectoCalculadora/v14/\.suo
