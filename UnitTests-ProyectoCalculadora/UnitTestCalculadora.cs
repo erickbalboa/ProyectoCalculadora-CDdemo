@@ -12,7 +12,7 @@ namespace UnitTests_ProyectoCalculadora
         {
             var calculadora = new Calculadora();
             var result = calculadora.Suma(1, 2);
-            Assert.AreEqual(4, result);
+            Assert.AreEqual(3, result);
         }
 
         [TestMethod]
