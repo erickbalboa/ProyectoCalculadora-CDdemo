@@ -17,7 +17,8 @@ pipeline {
         stage ('Pre-Building Steps') {
             steps {
 		    echo "empieza"
-                powershell '-NonInteractive -ExecutionPolicy ByPass & Write-Output "******************** Restore Nuget  ************************"'
+		    powershell '-NonInteractive -ExecutionPolicy ByPass & Write-Output "******************** Restore Nuget  ************************"'
+               // powershell '-NonInteractive -ExecutionPolicy ByPass & Write-Output "******************** Restore Nuget  ************************"'
 		   echo  'Set-Content -Path "C:\\temp\\2.txt" -Value "NADA"'
 		    powershell 'Set-Content -Path "C:\\temp\\2.txt" -Value "NADA"'
                 powershell  "-NonInteractive -ExecutionPolicy ByPass & ${nugetLocation} restore ProyectoCalculadora.sln"
