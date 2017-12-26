@@ -17,11 +17,11 @@ pipeline {
         stage ('Pre-Building Steps') {
             steps {
 		    echo "empieza"
-		bat 'powershell.exe -NonInteractive -ExecutionPolicy Bypass -Command ${nugetLocation} restore ProyectoCalculadora.sln'
+		bat 'powershell.exe -NonInteractive -ExecutionPolicy Bypass -Command' & ${nugetLocation} 'restore ProyectoCalculadora.sln'
                // powershell '-NonInteractive -ExecutionPolicy ByPass & Write-Output "******************** Restore Nuget  ************************"'
 		   echo  'Set-Content -Path "C:\\temp\\2.txt" -Value "NADA"'
 		   //powershell 'Set-Content -Path "C:\\temp\\2.txt" -Value "NADA"'
-                //powershell  "& ${nugetLocation} restore ProyectoCalculadora.sln"
+                powershell  "& ${nugetLocation} restore ProyectoCalculadora.sln"
                 
                 powershell 'Write-Output "******************** Clean Solution  ************************"'
                 powershell "& ${msbuildLocation} ProyectoCalculadora.sln /t:Clean /p:Configuration=Release"
