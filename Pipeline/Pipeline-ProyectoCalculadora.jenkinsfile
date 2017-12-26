@@ -7,7 +7,7 @@ def artifactRepo = "C:\\ArtifactRepo\\ProyectoCalculadora\\${params.TEAM}"
 def productionWebsiteLocation = "C:\\Websites\\ProyectoCalculadora-${params.TEAM}"
 
 pipeline {
-    agent any
+    agent { label 'master' }
     
     parameters {
         choice(name: 'TEAM', choices: 'Team1\nTeam2\nTeam3\nTeam4\nTeam5\nTeam6\nTeam7\nProduction', description: 'Team #')        
