@@ -17,7 +17,7 @@ pipeline {
         stage ('Pre-Building Steps') {
             steps {
                 powershell 'Write-Output "******************** Restore Nuget  ************************"'
-                powershell -NonInteractive -ExecutionPolicy ByPass "& ${nugetLocation} restore ProyectoCalculadora.sln"
+                powershell  "-NonInteractive -ExecutionPolicy ByPass & ${nugetLocation} restore ProyectoCalculadora.sln"
                 
                 powershell 'Write-Output "******************** Clean Solution  ************************"'
                 powershell "& ${msbuildLocation} ProyectoCalculadora.sln /t:Clean /p:Configuration=Release"
